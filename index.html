@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbo Riego</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <img class="logo" src="logo-sf.png">
+        <div class="menu container">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="menu.png" class="menu-icono">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#footer" class="cntct">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+             <ul>
+                <li class="submenu">
+                    <img src="carrito.png" id="img-carrito" alt="carrito">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th> 
+                                    <th></th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3"></td>
+                                    <td><strong>Total:</strong></td>
+                                    <td id="total-precio"></td> 
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="'btn-3"><b>Vaciar carrito</b></a>
+                        <a href="#" id="procesar-compra" class="btn-comprar">Comprar</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="overlay-notificacion"></div>
+    <div id="notificacion-compra">
+        Gracias por su compra
+    </div>
+
+    <section id="inicio" class="inicio"> 
+        <video src="video-inicio.mp4" id="video" autoplay loop muted></video>
+        <img src="logo-sf.png" class="logo-video">
+
+        <div class="botones-inicio">
+            <a href="#productos" class="btn-principal">Ver Productos</a>
+            <a href="#proyectos" class="btn-principal">Ver Proyectos</a>
+            <a href="#footer" class="btn-principal">Contacto</a>
+        </div>
+
+
+        
+
+    </section>
+
+    <section id="texto-inicio" class="texto-inicio">
+
+        <div class="presentacion">
+            <img src="icono-presentacion.png" id="icono-presentacion">
+            <p class="p-principal">
+                Herbo Riego es una empresa de San Martín de los Andes dedicada al 
+                diseño, instalación y mantenimiento de sistemas de riego automáticos 
+                y por goteo. Ofrecemos soluciones integrales para parques, jardines 
+                y espacios productivos, adaptadas a las necesidades de cada cliente. 
+                Además, contamos con una amplia variedad de insumos y accesorios de 
+                jardinería y brindamos asesoramiento técnico personalizado para 
+                garantizar un uso eficiente del agua y el cuidado de tus espacios verdes.
+            </p>
+
+        </div>
+
+        <div class="presentacion-nina">
+
+            <p class="p-principal">
+                Nina Adem, técnica en Jardinería, egresada de la Universidad Nacional de Buenos Aires, el
+                20 de Octubre de 1999.
+                "Tuve la suerte de crecer e
+                internalizar el campo en mi persona. Crecí y me eduqué en la de Aluminé y
+                Zapala. Hasta que fui a la facultad en Buenos Aires.
+                Desde que me recibí trabajo en Junín de los Andes y San Martín de los Andes.
+                En forma independiente desde 1999.
+                Primero haciendo riegos y jardines en forma particular y luego en 2003 abrí
+                Herbo Riego para ampliar la comercialización.
+                Con tendencia a lo natural, armando jardines que integren lo autóctono con lo
+                exótico en un equilibrio amable."
+            </p>
+            <img src="nina.png" id="icono-nina">
+
+        </div>
+
+    </section>
+
+    <section id="productos" class="productos">  
+      
+        <div class="contenido-productos">
+
+            <div class="producto" id="1">
+
+                <img src="manguera.webp" id="manguera">
+                <h3>Manguera QUATTROFLEX</h3>
+                <p>Manguera de PVC con triple capa, ideal para jardín o huerta.</p>
+                <p class="precio">$15.000</p>
+                <a href="#" class="agregar-carrito btn-principal" data-id="1">Añadir al Carrito</a>
+
+            </div>
+
+            <div class="producto" id="2">
+
+                <img  src="transporta-manguera.avif" id="transporta-manguera">
+                <h3>Carro portamanguera</h3>
+                <p>Para guardar hasta 50 m de una manguera de jardín de 3/4” de diámetro o 25 m de 1”.</p>
+                <p class="precio">$25.000</p>
+                <a href="#" class="agregar-carrito btn-principal" data-id="2">Añadir al Carrito</a>
+
+            </div>
+
+            <div class="producto" id="3">
+
+                <img src="macetas.webp" id="macetas">
+                <h3>Maceta URBALIVE</h3>
+                <p>Macetas de autorriego mantienen la humedad constante.</p>
+                <p class="precio">$30.000</p>
+                <a href="#" class="agregar-carrito btn-principal" data-id="3">Añadir al Carrito</a>
+
+            </div>
+
+            <div class="producto" id="4">
+
+                <img src="pistolas-riego.avif" id="pistolas">
+                <h3>Pistola TREND</h3>
+                <p>Pistola accesorio de riego con conexiones ajustables.</p>
+                <p class="precio">$20.000</p>
+                <a href="#" class="agregar-carrito btn-principal" data-id="4">Añadir al Carrito</a>
+
+            </div>
+
+            <div class="producto" id="5">
+
+                <img src="compostera.webp" id="compostera">
+                <h3>Compostera</h3>
+                <p>En esta compostera, las lombrices transforman los restos de comida en compost.</p>
+                <p class="precio">$25.000</p>
+                <a href="#" class="agregar-carrito btn-principal" data-id="5">Añadir al Carrito</a>
+
+            </div>
+
+            <div class="producto" id="6">
+
+                <img src="smart-garden.png" id="smrt-grdn">
+                <h3>Smart garden</h3>
+                <p>Maceta con luces LED para el crecimiento acelerado.</p>
+                <p class="precio">$30.000</p>
+                <a href="#" class="agregar-carrito btn-principal" data-id="6">Añadir al Carrito</a>
+
+            </div>
+        
+        </div>
+
+    </section>
+
+    <section id="proyectos" class="site-section">
+        <div class="contenido-proyectos">
+            
+            
+            <div class="tarjeta-introduccion">
+                <h2>Trabajos de Diseño, Ejecución y Riego</h2>
+                <p>
+                    En <b>Herbo Riego</b> y nuestra empresa asociada, <b>Constructora de Jardines</b> (junto a Gerardo Barrantes), transformamos espacios en la Patagonia. Nuestra labor se centra en el diseño, la ejecución y el mantenimiento de parques y sistemas de riego automatizado.
+                </p>
+                <div class="colaboradores">
+                    <p><b>Colaboraciones Históricas en Diseño:</b> Brígida Pacheco.</p>
+                    <p><b>Ejecución y Obras:</b> Gerardo Barrantes (Constructora de Jardines).</p>
+                </div>
+                <p class="cita-final">
+                    Una larga trayectoria y la satisfacción de nuestros clientes nos animan y entusiasman a seguir haciendo lo que nos gusta: sugerir, asesorar, diseñar y ejecutar con garantía y confianza.
+                </p>
+            </div>
+
+            <div class="linea-tiempo">
+                <h2>Proyectos Ejecutados y en Curso (2007 - 2024)</h2>
+                
+                <div class="ano-contenedor">
+                    <span class="ano-titulo">2024</span>
+                    <ul>
+                        <li>Luciano Marchini - Chapelco Golf D72: Proyecto de Parquización y ejecución. Riego con Sistema Hydrawise.</li>
+                    </ul>
+                </div>
+                
+                <div class="ano-contenedor">
+                    <span class="ano-titulo">2023</span>
+                    <ul>
+                        <li><b>Ea Huechahue:</b> Extensión Riego y nuevo proyecto extensivo. Automatización riego chacras con sistema Hydrawise. (En proceso)</li>
+                        <li>Carlos Lobalzo - Proyecto de Parquización y riego.</li>
+                        <li>Maria Ines Isola y Paulo Galderisi (Meliquina): Proyecto de Parquización. (En proceso)</li>
+                        <li>Monica de Cicco (Peñon de Lolog): Proyecto de Parquización. (Etapa 1 finalizada)</li>
+                        <li>Lorena Hoffmann, Christian Petruzzi (Valle Escondido): Proyectos de Parquización.</li>
+                        <li>Guillermo Scappini, Jöel Vuarambon, Jorge Coppola, Estudio KT AR, Pino Leporace, Silvina Selva: Proyectos y Riego Hydrawise.</li>
+                        <li>Rosana Thomson, Santiago Bello: Riego automatizado Hydrawise.</li>
+                    </ul>
+                </div>
+                
+                <div class="ano-contenedor">
+                    <span class="ano-titulo">2022</span>
+                    <ul>
+                        <li>Luis Chodorge (Complejo Pilo Lil): Diseño integral 11 casas + Ejecución Riego y Plantación.</li>
+                        <li>Marta Carlos, Marina Poveda, Daniel Gesualdo, Martin Rodriguez, Cecilia Balestrini: Diseños de Parquización.</li>
+                        <li>Ea Santa Lucía: Parquización y Riego Casas 1 y 2 entrada. (Finalizado)</li>
+                    </ul>
+                </div>
+                
+                <div class="ano-contenedor">
+                    <span class="ano-titulo">2021</span>
+                    <p class="destacado-servicio"><b>Foco en Riego Quilquihue:</b> 5 lotes (Rizzo, Buchanan, Pardal, etc.)</p>
+                    <ul>
+                        <li>Ea Huechahue: Riego 2,5 has. Propiedad de Jane Williams. (Finalizado)</li>
+                        <li>Daniel Aguilera (Alumine River Lodge): Reforma y mejora de Riego.</li>
+                        <li>Ricardo y Cecilia Ker (El Desafío), Fernando Rubio (Las Marías del Valle): Finalizados.</li>
+                        <li><b>Proyectos en Proceso/Diseño:</b> Loli Lanusse, Parque Diana, Alicia Henriquez, Arq Agustina Cravero, Maricel Dotta, Eliana Martinez.</li>
+                        <li><b>Ejecución/Riego Finalizado:</b> Renteria, Martin, Coto, Eiff, Vázquez.</li>
+                    </ul>
+                </div>
+                
+                <div class="ano-contenedor">
+                    <span class="ano-titulo">2020</span>
+                    <ul>
+                        <li>4 Cabañas Caleuche (Arq Tulio Rossini): Diseño de parquización (En ejecución).</li>
+                        <li>Daniel Coria: Diseño de jardin - Pileta - Riego.</li>
+                        <li>Santiago Buratovich, Antonio Duarte, Nara Oses: Riego/Proyectos finalizados.</li>
+                        <li>Claudio Alderete, Claudio Carbajal: Riego (Las Marías del Valle).</li>
+                    </ul>
+                </div>
+                
+                <div class="ano-contenedor anos-antiguos">
+                    <span class="ano-titulo">2007 - 2019</span>
+                    <p class="destacado-servicio">Incluye proyectos clave y colaboraciones iniciales:</p>
+                    <ul>
+                        <li><b>Museo Colección GEORG (2017/2019):</b> Diseño de jardín y Riego.</li>
+                        <li><b>Campo Ahuva (2007):</b> 20 has trabajadas en su totalidad, sobre el Río Chimehuin. Propiedad del Sr Eduardo Cohen.</li>
+                        <li><b>Chocolatería Mamusia (2013):</b> Proyecto de Paisajismo.</li>
+                        <li><b>Hotel Boutique Paraíso (2016):</b> Proyecto paisajístico.</li>
+                        <li>Trabajos en Chapelco Golf, Cascada Chica, Valle Escondido, El Hípico, Raitrai.</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+
+<footer id="footer">
+    <div class="footer-contenido container">
+        
+        <div class="columna-contacto">
+            <h2>Contacto:</h2>
+            
+            <div class="redes-sociales">
+                
+                <div class="social-item">
+                    <a href="https://www.whatsapp.com/catalog/5492944610953/?app_absent=0" target="_blank" aria-label="WhatsApp">
+                        <img src="wpp.png" alt="Logo WhatsApp">
+                    </a>
+                    <a href="https://www.whatsapp.com/catalog/5492944610953/?app_absent=0" target="_blank">Enviar Mensaje</a> 
+                </div>
+
+                <div class="social-item">
+                    <a href="https://www.instagram.com/herboriegosma/" target="_blank" aria-label="Instagram">
+                        <img src="instagram.png" alt="Logo Instagram">
+                    </a>
+                    <a href="https://www.instagram.com/herboriegosma/" target="_blank">Síguenos en Instagram</a>
+                </div>
+
+                <div class="social-item">
+                    <a href="https://www.facebook.com/herboriegosma/?ref=_xav_ig_profile_page_web" target="_blank" aria-label="Facebook">
+                        <img src="fb.png" alt="Logo Facebook">
+                    </a>
+                    <a href="https://www.facebook.com/herboriegosma/?ref=_xav_ig_profile_page_web" target="_blank">Visita nuestro Facebook</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <p class="copyright">Herbo Riego © 2024. Todos los derechos reservados.</p>
+        
+    </div>
+</footer>
+</html>
